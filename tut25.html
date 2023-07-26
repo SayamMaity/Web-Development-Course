@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 4px solid black;
+            background-color: khaki;
+            height: 3335px;
+        }
+
+        /* cSS position: static(default),absolute,realative,fixed,sticky */
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box1 {
+            position: static;
+            /*by defult it is static*/
+        }
+
+        #box2 {
+            position: absolute;
+            /*parent seh change kartah hai..like from the stating of the bos with khaki color like yeh change hoga dabba ke starting seh*/
+            top: 32px;
+            left: 12px;
+        }
+
+        #box3 {
+            position: relative;
+            /*apne postion seh relative change hoga like it will change from the original position it was there early and will leave a gap*/
+            top: 33px;
+            left: 44px;
+        }
+
+        #box4 {
+            position: fixed;
+            /*it will fixed even if we scroll down*/
+            right: 14px;
+        }
+
+        #box5{
+            position: sticky;
+            top: 4px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">chat with us</div>
+        <div class="box" id="box5">ok</div>
+    </div>
+
+</body>
+
+</html>
